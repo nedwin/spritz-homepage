@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1072px" viewBox="0 0 1440 1072" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="75.7294004%" x2="0%" y2="24.2389356%" id="linearGradient-1">
+            <stop stop-color="#FECC30" offset="0%"></stop>
+            <stop stop-color="#F97878" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-2-Julie" transform="translate(0.000000, -1782.000000)" fill="url(#linearGradient-1)">
+            <polygon id="Rectangle-5" points="0 2057.11594 1440 1782 1440 2854 0 2854"></polygon>
+        </g>
+    </g>
+</svg>

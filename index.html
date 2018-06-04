@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Expense management software that takes the headaches out of budgeting, reporting, and corporate card management.">
+        <link rel="icon" href="img/favicon.png" type="image/ico" sizes="16x16">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Spritz - The refreshing expense management system.</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="css/hamburgers.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/media.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="heromain box">
+            <div class="heroouter box">
+                <div class="heroinner box">
+                    <!--        Start of Header Section-->
+                    <div class="header box">
+                        <div class="container-fluid">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <a class="navbar-brand" href="#">SPRiTZ</a>
+                                <button class="navbar-toggler hamburger hamburger--squeeze" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">demo</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#section2id">Features</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#integrationid">Integrations</a>
+                                        </li>
+                                        <li class="nav-item mrleft1">
+                                            <a href="#" class="demo nav-link" data-toggle="modal" data-target="#demo5">Request Demo</a>
+                                            <div class="modal fade demos" id="demo5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                                                <div class="closediv box">
+                                                    <a href="#" class="close" data-dismiss="modal" ><i class="fa fa-times" aria-hidden="true"></i></a>
+                                                </div>
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body box">
+                                                            <h4 class="heading">Let’s show you what Spritz can do.</h4>
+                                                            <form method="POST" action="https://formspree.io/ned@spritz.works">
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label>Name</label>
+                                                                            <input type="text" name="name" class="form-control first" placeholder="Alan Grant">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label>Work Email</label>
+                                                                            <input type="email" name="email" class="form-control first" placeholder="alan.grant@jurassicpark.com">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label>Company Name</label>
+                                                                            <input type="text" name="company-name" class="form-control" placeholder="Jurassic Park, Inc">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label>Company Size</label>
+                                                                        <select name="company-size" class="form-control">
+                                                                            <option value="1">1-25</option>
+                                                                            <option value="2">26-75</option>
+                                                                            <option value="3">76-150</option>
+																			<option value="4">151-500</option>
+																			<option value="4">500+</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group expenses">
+                                                                            <label>Estimated Monthly Expenses</label>
+                                                                            <input type="text" name="m-expenses" class="form-control" placeholder="e.g. $25,000">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label>Current Expense Solution</label>
+                                                                            <input type="text" name="c-expenses" class="form-control" placeholder="e.g. Quickbooks">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="demobox box">
+                                                                    <button class="btns">Request a demo</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--<li class="nav-item mrleft2"><a href="#" class="nav-link">LOGIN</a></li> -->
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="sidenav" id="mySidenav">
+                            <a href="#">demo</a>
+                            <a href="#section2id">features</a>
+                            <a href="#integrationid">integrations</a>
+                            <a href="#">login</a>
+                        </div>
+                    </div>
+                    <!--        End of Header Section-->
+
+                    <!--        Start of Hero Section-->
+                    <div class="hero box">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 nopadding">
+                                    <div class="heroleft box">
+                                        <h1 class="heading">Say goodbye <span>to expense reports.</span></h1>
+                                        <p class="para">Automatic expense reporting for you <span>and your team.</span></p>
+                                        <div class="demobox box">
+                                            <a href="#" class="btns" data-toggle="modal" data-target="#demo6">Request a demo</a>
+                                            <div class="modal fade demos" id="demo6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                                                <div class="closediv box">
+                                                    <a href="#" class="close" data-dismiss="modal" ><i class="fa fa-times" aria-hidden="true"></i></a>
+                                                </div>
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body box">
+                                                            <h4 class="heading">Let’s show you what Spritz can do.</h4>
+  <form method="POST" action="https://formspree.io/ned@spritz.works">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" name="name" class="form-control first" placeholder="Alan Grant">
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Work Email</label>
+                  <input type="email" name="email" class="form-control first" placeholder="alan.grant@jurassicpark.com">
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Company Name</label>
+                  <input type="text" name="company-name" class="form-control" placeholder="Jurassic Park, Inc">
+              </div>
+          </div>
+          <div class="col-md-6">
+              <label>Company Size</label>
+              <select name="company-size" class="form-control">
+                  <option value="1">1-25</option>
+                  <option value="2">26-75</option>
+                  <option value="3">76-150</option>
+				<option value="4">151-500</option>
+				<option value="4">500+</option>
+              </select>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group expenses">
+                  <label>Estimated Monthly Expenses</label>
+                  <input type="text" name="m-expenses" class="form-control" placeholder="e.g. $25,000">
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Current Expense Solution</label>
+                  <input type="text" name="c-expenses" class="form-control" placeholder="e.g. Quickbooks">
+              </div>
+          </div>
+      </div>
+                                                                <div class="demobox box">
+                                                                    <button class="btns">Request a demo</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="desktophide arrow box">
+                                        <a href="#section2id">
+                                            <span class="btninner">
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 nopadding">
+                                    <div class="macpic box">
+                                        <span class="mac"><img src="img/Macbook + iPhone Edition.svg" class="img-fluid" alt="mac">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="herobtm box">
+                                <div class="row">
+                                    <div class="col-md-4 mobilehide nopadding">
+                                        <div class="arrow box">
+                                            <a href="#section2id">
+                                                <span class="btninner">
+                                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 nopadding">
+                                        <!--   Trust Symbol - client logos
+											<div class="partner box">
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-4 col-6">
+                                                    <div class="partners">
+                                                        <img src="https://res.cloudinary.com/rex-expenses/image/fetch/http://designoweb.com/demo/rex/img/stanford.png" class="img-fluid" alt="stanford">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-4 col-6">
+                                                    <div class="partners">
+                                                        <img src="https://res.cloudinary.com/rex-expenses/image/fetch/http://designoweb.com/demo/rex/img/yahoo.png" class="img-fluid" alt="yahoo">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-4 col-6">
+                                                    <div class="partners">
+                                                        <img src="https://res.cloudinary.com/rex-expenses/image/fetch/http://designoweb.com/demo/rex/img/ikea.png" class="img-fluid" alt="ikea">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-4 col-6">
+                                                    <div class="partners">
+                                                        <img src="https://res.cloudinary.com/rex-expenses/image/fetch/http://designoweb.com/demo/rex/img/facebook.png" class="img-fluid" alt="facebook">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-4 col-6">
+                                                    <div class="partners">
+                                                        <img src="https://res.cloudinary.com/rex-expenses/image/fetch/http://designoweb.com/demo/rex/img/deloitte.png" class="img-fluid" alt="deloitte">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-4 col-6">
+                                                    <div class="partners">
+                                                        <img src="https://res.cloudinary.com/rex-expenses/image/fetch/http://designoweb.com/demo/rex/img/benjerrys.png" class="img-fluid" alt="benjerrys">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--        End of Hero Section-->
+                </div>
+            </div>
+        </div>
+
+        <!--        Start of Section 2-->
+        <div class="section2 box" id="section2id">
+            <div class="container">
+                <div class="sect2 box">
+                    <div class="row">
+                        <div class="col-md-6 noleft">
+                            <div class="sect2img box">
+                                <img src="https://res.cloudinary.com/rex-expenses/image/fetch/http://designoweb.com/demo/rex/img/work.jpg" class="img-fluid work" alt="work">
+                            </div>
+                        </div>
+                        <div class="col-md-6 noright">
+                            <div class="sect2txt sect2txt1 box">
+                                <h1 class="heading">Let your team buy what they need to get their job done</h1>
+                                <p class="para">Spritz gives everyone on your team a branded corporate card
+                                    while keeping all spending within policies and budget
+                                </p>
+                                <p class="para">Empover your team to do their best work. We’ll do the rest.
+                                    <a href="#" data-toggle="modal" data-target="#demo2">learn more</a>
+                                <div class="modal fade demos" id="demo2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                                    <div class="closediv box">
+                                        <a href="#" class="close" data-dismiss="modal" ><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body box">
+                                                <h4 class="heading">Let’s show you what Spritz can do.</h4>
+                                                <form method="POST" action="https://formspree.io/ned@spritz.works">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Name</label>
+                                                                <input type="text" name="name" class="form-control first" placeholder="Alan Grant">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Work Email</label>
+                                                                <input type="email" name="email" class="form-control first" placeholder="alan.grant@jurassicpark.com">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Company Name</label>
+                                                                <input type="text" name="company-name" class="form-control" placeholder="Jurassic Park, Inc">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>Company Size</label>
+                                                            <select name="company-size" class="form-control">
+                                                                <option value="1">1-25</option>
+                                                                <option value="2">26-75</option>
+                                                                <option value="3">76-150</option>
+																<option value="4">151-500</option>
+																<option value="4">500+</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group expenses">
+                                                                <label>Estimated Monthly Expenses</label>
+                                                                <input type="text" name="m-expenses" class="form-control" placeholder="e.g. $25,000">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Current Expense Solution</label>
+                                                                <input type="text" name="c-expenses" class="form-control" placeholder="e.g. Quickbooks">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="demobox box">
+                                                        <button class="btns">Request a demo</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect2 box">
+                    <div class="row">
+
+                        <div class="col-md-6 nopadding">
+                            <div class="sect2txt box">
+                                <h1 class="heading">The end of the expense report as you know it</h1>
+                                <p class="para">Spritz automatically captures receipt data and reconciles all transactions.</p>
+                                <p class="para">Your team can stop filing expense reports, you can stop
+                                    chasing them and get back to the big picture.
+                                    <a href="#" data-toggle="modal" data-target="#demo3">learn more</a>
+                                <div class="modal fade demos" id="demo3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                                    <div class="closediv box">
+                                        <a href="#" class="close" data-dismiss="modal" ><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body box">
+                                                <h4 class="heading">Let’s show you what Spritz can do.</h4>
+                                                <form method="POST" action="https://formspree.io/ned@spritz.works">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Name</label>
+                                                                <input type="text" name="name" class="form-control first" placeholder="Alan Grant">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Work Email</label>
+                                                                <input type="email" name="email" class="form-control first" placeholder="alan.grant@jurassicpark.com">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Company Name</label>
+                                                                <input type="text" name="company-name" class="form-control" placeholder="Jurassic Park, Inc">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>Company Size</label>
+                                                            <select name="company-size" class="form-control">
+                                                                <option value="1">1-25</option>
+                                                                <option value="2">26-75</option>
+                                                                <option value="3">76-150</option>
+																<option value="4">151-500</option>
+																<option value="4">500+</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group expenses">
+                                                                <label>Estimated Monthly Expenses</label>
+                                                                <input type="text" name="m-expenses" class="form-control" placeholder="e.g. $25,000">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Current Expense Solution</label>
+                                                                <input type="text" name="c-expenses" class="form-control" placeholder="e.g. Quickbooks">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="demobox box">
+                                                        <button class="btns">Request a demo</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 noright">
+                            <div class="sect2img box">
+                                <img src="img/iPhones.svg" class="img-fluid" alt="iphones">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        End of Section 2-->
+
+        <!--        Start of Section 3-->
+        <div class="section3 box">
+            <div class="container">
+                <h1 class="heading">Stop chasing Gary from sales.
+                    <span>Start driving the bottom line</span>
+                </h1>
+                <p class="para">No more end-of-quarter expense dumps and endless chasing of receipts. Track
+                    <span>expenditure against budgets and stay on target</span>
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+	        <div class="section4 box">
+	            <div class="container">
+	                <div class="sect4 box">
+	                    <div class="demobox box">
+	                        <a href="#" class="btns" data-toggle="modal" data-target="#demo4">Request a demo</a>
+
+	                    </div>
+
+
+	                </div>
+	            </div>
+	        </div>
+
+        <!--        End of Section 3-->
+
+        <!--        Start of Section 4 - a box we'll fill with some kind of demo video later on.
+        <div class="section4 box">
+            <div class="container">
+                <div class="sect4 box">
+                    <img src="https://res.cloudinary.com/rex-expenses/image/fetch/http://designoweb.com/demo/rex/img/website.png" class="img-fluid" alt="website">
+                </div>
+            </div>
+        </div>
+               End of Section 4-->
+
+        <!--        Start of Integration Section-->
+        <div class="integration box" id="integrationid">
+            <div class="integrateinner box">
+                <div class="container-fluid">
+                    <h2 class="heading">Integrations</h2>
+                    <div class="intt box">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="integrate box">
+                                    <div class="intimg box">
+                                        <img src="img/xero-logo.png" class="img-fluid" alt="xero">
+                                    </div>
+                                    <div class="intxt box">
+                                        <h1 class="heading">Xero</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="integrate box">
+                                    <div class="intimg box">
+                                        <img src="img/qb-logo.png" class="img-fluid" alt="xero">
+                                    </div>
+                                    <div class="intxt box">
+                                        <h1 class="heading">QuickBooks</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="integrate box">
+                                    <div class="intimg box">
+                                        <img src="img/ns-logo.png" class="img-fluid" alt="xero">
+                                    </div>
+                                    <div class="intxt box">
+                                        <h1 class="heading">NetSuite</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="integrate box">
+                                    <div class="intimg box">
+                                        <img src="img/fb-logo.png" class="img-fluid" alt="xero">
+                                    </div>
+                                    <div class="intxt box">
+                                        <h1 class="heading">FreshBooks</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        End of Integration Section-->
+
+        <!--        Start of Get Started Section
+        <div class="start box">
+            <div class="container">
+                <div class="fortxt box">
+                    <h1 class="heading">Ready to get started?</h1>
+                    <div class="demobox box">
+                        <a href="#" class="btns" data-toggle="modal" data-target="#demo4">Request a demo</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade demos" id="demo4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+            <div class="closediv box">
+                <a href="#" class="close" data-dismiss="modal" ><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body box">
+                        <h4 class="heading">Let’s show you what Rex can do.</h4>
+                        <form method="POST" action="https://formspree.io/ned@trustrex.com">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" name="name" class="form-control first" placeholder="Alan Grant">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Work Email</label>
+                                        <input type="email" name="email" class="form-control first" placeholder="alan.grant@jurassicpark.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Company Name</label>
+                                        <input type="text" name="company-name" class="form-control" placeholder="Jurassic Park, Inc">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Company Size</label>
+                                    <select name="company-size" class="form-control">
+                                        <option value="1">1-25</option>
+                                        <option value="2">26-75</option>
+                                        <option value="3">76-150</option>
+										<option value="4">151-500</option>
+										<option value="4">500+</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group expenses">
+                                        <label>Estimated Monthly Expenses</label>
+                                        <input type="text" name="m-expenses" class="form-control" placeholder="e.g. $25,000">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Current Expense Solution</label>
+                                        <input type="text" name="c-expenses" class="form-control" placeholder="e.g. Quickbooks">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="demobox box">
+                                <button class="btns">Request a demo</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        End of Get Started Section
+
+        <!--        Start of Testimonial Section
+        <div class="test box">
+            <div class="container">
+
+                <div class="tes box">
+                    <div class="tesin box">
+                        <div class="comma box">
+                            <img src="https://res.cloudinary.com/rex-expenses/image/fetch/http://designoweb.com/demo/rex/img/invalid-name.png">
+                        </div>
+                        <div class="testxt box">
+                            <p class="para">We don’t want to stop our people from spending
+                                money - we want to give them the tools they need to do their
+                                jobs. We want to trust them to do the right thing and give
+                                them guidance on ways they can help build a financially
+                                stable business.
+                            </p>
+                            <h6 class="para">Andrew Mackenzie - Ross <span>CTO, Happy Co</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        End of Testimonial Section-->
+
+        <!--        Start of Footer Section-->
+        <div class="footer box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 nopadding">
+                        <table class="mobilehide">
+                            <tr>
+                                <td><a href="#"><img src="img/logof.png" class="img-fluid" alt="logo"></a></td>
+                                <td><h1 class="heading2">SPRiTZ expenses</h1></td>
+                            </tr>
+                        </table>
+                        <div class="desktophide logof">
+                            <a href="#"><img src="img/logof.png" class="img-fluid" alt="logo"></a>
+                            <h1 class="heading">Spritz expenses</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- <ul>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Demo</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Integration</a></li>
+                        </ul> -->
+                    </div>
+                    <div class="col-md-3">
+
+						<ul>
+						                            <li><a href="#">Product</a></li>
+						                            <li><a href="#">Demo</a></li>
+						                            <li><a href="#">Features</a></li>
+						                            <li><a href="#">Integration</a></li>
+						                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="third">
+
+                <ul class="mid">
+                    <li>Contact</li>
+                    <li>hello@spritz.works</li>
+                    <li>12 Oakwood Street,<span>San Francisco, CA</span></li>
+                </ul>
+
+
+							<!--
+                            <li>Find us online</li>
+                            <li class="social">
+                                <a href="#" class="fb"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="copyright box">
+                    <p>Copyright 2018 Very Labs, Inc</p>
+                </div>
+            </div>
+        </div>
+        <!--        End of Footer Section-->
+
+        <script src="js/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
